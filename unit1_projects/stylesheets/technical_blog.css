@@ -1,0 +1,10 @@
+.border {  
+  border: 3px solid red;
+  font-weight: bolder;
+  font-size: xx-large;
+  font-family: "Times New Roman";
+  color: #A52A2A;
+  background-color: orange;
+  margin-top: 0;
+  margin-bottom: 0;
+ }
