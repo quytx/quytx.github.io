@@ -1,0 +1,61 @@
+	<!DOCTYPE html PUBLIC>
+	<html>
+	<body background="images/brown.jpg">
+
+		<head>
+			<link rel="stylesheet" type="text/css" href="stylesheets/technical_blog.css">
+			<p class="border" align="center">Week 4 Technical Blog</p>	
+		</head>			
+		<br/>
+
+
+
+		<h2><center><font color="#00FFFF"><u>How to loop in Ruby?
+		</u></font></center></h2>
+		<font color="#A9F5F2"; size="4">		
+		<ol>
+
+		<li><u>Using a <font color="magenta">while/until</font> loop:</u> a conditional block of code that keeps executing while the conditional statement is true. 
+			<p class = "quote">while (conditional statement) <br/>
+				<span class = "tab"> 
+				# do something here - while the conditional statement is TRUE
+				</span>	<br/>
+				end
+			</p>
+			or similarly using "until" instead of "while"
+			<p class = "quote">until (conditional statement) <br/>
+				<span class = "tab"> 
+				# do something here - while the conditional statement is FALSE
+
+				</span>	<br/>
+				end
+			</p>
+			The while/until loop is useful when you do not know exactly how many times the loop will be executed. Be careful when selecting the conditional statement - you might end up with an infinite loop !!
+
+		</li>
+
+		<br/>
+		<li>Using a for loop: </li>
+			<p class = "quote">for [variable] in [range] do <br/>
+				<span class = "tab"> 
+				# do something here - will be executed for each value of the local variable
+				</span>	<br/>
+				end
+			</p>
+			Syntax for [range] may include the beginning and ending values of the variable. For example:
+			<p class = "quote">for x in 0..3 do  <br/>
+				<span class = "tab"> 
+				 puts x # this will print out each value of x in the range
+				</span>	<br/>
+				end
+			</p>
+
+			The for loop should be used when you know exactly the range (or how many times) the loop needs to be executed. Be careful when selecting the range - your program might crash during the loop if something "out of range" is called !!
+
+		<br/>
+		<li>Using a .times statements</li>		
+		</ol>
+		</font>
+				
+	</body>
+	</html>
