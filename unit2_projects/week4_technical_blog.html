@@ -35,7 +35,7 @@
 		</li>
 
 		<br/>
-		<li>Using a for loop: </li>
+		<li><u>Using a <font color="magenta">for</font> loop:</u> 
 			<p class = "quote">for [variable] in [range] do <br/>
 				<span class = "tab"> 
 				# do something here - will be executed for each value of the local variable
@@ -43,17 +43,25 @@
 				end
 			</p>
 			Syntax for [range] may include the beginning and ending values of the variable. For example:
-			<p class = "quote">for x in 0..3 do  <br/>
+			<p class = "quote">for x in 0...3 do  <br/>
 				<span class = "tab"> 
 				 puts x # this will print out each value of x in the range
 				</span>	<br/>
-				end
+				end				
 			</p>
 
 			The for loop should be used when you know exactly the range (or how many times) the loop needs to be executed. Be careful when selecting the range - your program might crash during the loop if something "out of range" is called !!
+		</li>
 
 		<br/>
-		<li>Using a .times statements</li>		
+		<li><u>Using <font color="magenta">.times</font> statement:</u> very similar to the for-loop, but instead of looping based on the value of a variable you specify the number of times to execute the block of code
+			<p class = "quote">3.times do <br/>
+				<span class = "tab"> puts "I am learning how to write a loop in Ruby"
+				# do something here - this will be repeated 3 times
+				</span>	<br/>
+				end
+			</p>			
+		</li>		
 		</ol>
 		</font>
 				
