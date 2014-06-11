@@ -1,0 +1,25 @@
+.border {  
+  border: 3px solid red;
+  font-weight: bolder;
+  font-size: xx-large;
+  font-family: "Times New Roman";
+  color: #A52A2A;
+  background-color: orange;
+  margin-top: 0;
+  margin-bottom: 0;
+ }
+
+ .quote {
+  border: 1px solid black;  
+  font-size: 12px;
+  font-family: Georgia, "Times New Roman";
+  color: black;
+  background-color: #fff6e5 ;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+ }
+
+ span.tab {
+ 	padding-left: 15px;
+ }

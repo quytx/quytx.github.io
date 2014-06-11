@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>Quy's Github</title>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css" />
+</head>
+<body>
+<div id="header-wrap">
+  <div id="header" class="container_16">
+    <h1 id="logo-text"><a href="#">Week 7 - Technical</a></h1>
+    
+    
+	
+	<div  id="nav">
+      <ul>
+        <li><a href="../index.html">About me</a></li>
+        <li id="current"><a href="../blog.html">Blog</a></li>
+        <li><a href="../photos.html">Photos</a></li>
+        <li><a href="../contact.html">Contact me</a></li>  
+      </ul>
+    </div>
+	
+	
+   
+  </div>
+</div>
+<div id="content-outer">
+  <div id="content-wrapper" class="container_16">
+    
+	
+	<div id="main" class="grid_8">
+      
+	  
+	  <h2>What is SQL injection?</h2>
+      
+      <p><strong>
+		In general, a SQL injection is one way for hackers to steal data from a website.
+        <br/>
+        For example, mostly every website that have users data such as name, date of birth, etc. allow users to hide their private info by providing them a unique account that is only accessible if a correct combination of username and password are entered. But if the website does not have any sort of injection-protected function, hackers can break in the database and steal data without knowing the username and/or password.
+		<br/>
+        <br/>
+        
+		Ok, now let's look at this specific example. Let's say you visit an online shopping website where you created an account with username and password, i.e
+        <p class ="quote">username: John Snow
+        <br/>
+        password: Iamhandsome
+        </p>
+        Whenever you enter your username and password, the website will make a query to the database to validate the info. If poorly constructed, the query may look like this:
+        <p class ="quote">SELECT *
+        <br/>
+        FROM customers_database
+        <br/>
+        WHERE username = 'INPUT_NAME'
+        <br/>
+        AND password = 'INPUT_PASSWORD'
+        </p>
+        If you think you're safe, think again. What if the hacker who already knows your username enters something like:
+        <p class ="quote">username: 'John Snow'
+        <br/>
+        password: '123456' OR 1 = 1
+        </p>
+        What happens next, is this query will be called:
+        <p class ="quote">SELECT *
+        <br/>
+        FROM customers_database
+        <br/>
+        WHERE username = 'John Snow'
+        <br/>
+        AND password = ('123456' OR 1 = 1)
+        </p>
+        Now, since 1 = 1 is always true, the condition is always true even though 123456 is not the correct password (it should be "Iamhandsome" instead). And boom, your info is now completely exposed!!!
+		<br/>
+		<br/>
+        
+		To prevent this from happening, obviously you have to change the way the website takes input. One way is to validate the input <font color="magenta">BEFORE</font> making the query, to make sure that it contains no suspicious elements.
+		<br/>
+		<br/>
+        Of course there are more complex ways as well, so let's find out!!
+	  
+	  
+	  </p>
+      
+	  
+	  
+      
+    </div>
+	
+	
+	
+    <div id="left-columns" class="grid_8">
+      <div class="grid_4 alpha">
+        <div class="sidemenu">
+          <h3>Technical Blog</h3>
+          <ul>
+            <li><a href="week1_technical.html">Week 1 - Technical</a></li>
+            <li><a href="week2_technical.html">Week 2 - Technical</a></li>
+			<li><a href="week3_technical.html">Week 3 - Technical</a></li>
+			<li><a href="week4_technical.html">Week 4 - Technical</a></li>
+			<li><a href="week5_technical.html">Week 5 - Technical</a></li>
+			<li><a href="week6_technical.html">Week 6 - Technical</a></li>
+			<li><a href="week7_technical.html">Week 7 - Technical</a></li>
+          </ul>
+        </div>
+        <div class="sidemenu">
+          <h3>Cultural Blog</h3>
+          <ul>
+            <li><a href="../blog_cultural/week1_cultural.html">Week 1 - Cultural</a></li>
+            <li><a href="../blog_cultural/week2_cultural.html">Week 2 - Cultural</a></li>
+			<li><a href="../blog_cultural/week3_cultural.html">Week 3 - Cultural</a></li>
+			<li><a href="../blog_cultural/week4_cultural.html">Week 4 - Cultural</a></li>
+			<li><a href="../blog_cultural/week5_cultural.html">Week 5 - Cultural</a></li>
+			<li><a href="../blog_cultural/week6_cultural.html">Week 6 - Cultural</a></li>
+			<li><a href="../blog_cultural/week7_cultural.html">Week 7 - Cultural</a></li>
+          </ul>
+        </div>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div id="footer-wrapper" class="container_16">
+    <div id="footer-bottom">
+      <p class="bottom-left"> &nbsp; &copy;June 2014 &nbsp; &nbsp;</p>  
+    </div>
+</div>
+</body>
+</html>
